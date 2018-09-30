@@ -1,0 +1,217 @@
+/**************/
+/*BASIC STYLES*/
+/**************/
+
+body {
+  min-width: 400px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 300;
+  color: #111;
+  background-image: url(svgs/background.svg);
+  background-color: #ECEFEF;
+}
+
+#container {
+  max-width: 850px;
+  min-width: 425px;
+  background: #fff;
+  margin: 0 auto;
+  height: 100%; /* new line */
+}
+
+p {
+  max-width: 350px;
+  margin: 35px auto 0;
+  line-height: 2em;
+  text-align: left;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+}
+
+a {
+  text-decoration: none;
+  color: #39add1;
+  font-weight: 700;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+}
+
+.nav-list {
+  padding-top: 9px;
+}
+
+.nav-list li {
+  padding-right: 40px;
+  font-size: 14px;
+}
+
+header {
+  padding-top: 50px;
+}
+
+header nav {
+  padding-bottom: 50px;
+  text-align: left;
+}
+
+header nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+h1 {
+  margin-top: 10px;
+}
+
+main {
+  padding-top: 30px;
+}
+
+main h2 {
+  font-size: 28px;
+  margin-bottom: 0;
+}
+
+main p {
+  margin-top: 30px;
+}
+
+footer {
+  width: 100%;
+  margin-top: 100px;
+  padding-bottom: 30px;
+  color: #ba8058;
+}
+
+
+/**************/
+/*HOVER STATES*/
+/*TRANSITIONS */
+/**************/
+
+.nav-list li {
+  transition: .5s ease-in-out;
+}
+
+.nav-list li:hover {
+  transform: scale(1.07);
+}
+
+a {
+  transition: .5s ease-in-out;
+}
+
+a:hover {
+  color:#ba8058;
+}
+
+.heart,
+.location,
+.contact {
+  transition: .5s ease-in-out;
+}
+
+.home:hover .heart,
+.visit-us:hover .location,
+.contact-us:hover .contact {
+  fill: #f4c6a6;
+}
+
+.outline,
+.paw-prints {
+  transform-origin: 50% 50%;
+  transition: .5s ease-in-out;
+}
+
+.paw-logo:hover .outline,
+.paw-logo:hover .paw-prints{
+  transform: rotate(360deg);
+}
+
+
+/**************/
+/* SVG STYLES */
+/**************/
+
+.paw-logo-text {
+  display: block;
+}
+
+.paw-logo-text {
+  display: block;
+  color:#F4C6A6;
+  margin-bottom: 0;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.corgi-svgs {
+  height: auto;
+}
+
+.corgi {
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 850px;
+  margin: 0;
+  padding: 0;
+}
+
+.corgi li {
+  display: flex;
+  flex-direction: column;
+  padding-right: 10px;
+}
+
+.corgi span {
+  font-size: 12px;
+  padding-right: 30px;
+  color:#C96D54;
+}
+
+.svg-logo-text,
+.paw-print {
+  fill:#F4C6A6
+}
+
+.svg-logo-text {
+  display: none;
+}
+
+.sable {
+  color:#B78366;
+}
+
+.fawn {
+  color:rgb(228, 183, 157);
+}
+
+.red {
+  color:#7C4709;
+}
+
+.stone {
+  color:#52595F;
+}
+
+/**************/
+/* MEDIA QUERY*/
+/**************/
+
+@media (min-width: 768px) {
+  .svg-logo-text {
+    display: block;
+  }
+  .paw-logo-text {
+    display: none;
+  }
+}
