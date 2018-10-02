@@ -18,7 +18,7 @@ The purpose of this project was to learn how to modify styles on SVG's and anima
 ### Features
 **1. Responsive Design**
 
-**2. Compatible on Chrome 51.0.2704.63 and Firefox 46.0.1**
+**2. Compatible on Chrome  68.0.3440.106  and Firefox 62.0 (64-bit)**
 
 **3. Inline SVGs added for all images.**
 
